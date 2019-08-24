@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Trivia Game</title>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -12,25 +12,26 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <title>Trivia Game</title>
   </head>
-
+  
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <h1>Trivia Game</h1>
         <form action="" id="form">
           <label for="amount"
-            >Number of Questions:
-            <input
-              type="number"
-              name="amount"
-              id="amount"
-              min="1"
-              max="50"
+          >Number of Questions:
+          <input
+          type="number"
+          name="amount"
+          id="amount"
+          min="1"
+          max="50"
               value="1"
-            />
-          </label>
-          <label for="category"
+              />
+            </label>
+            <label for="category"
             >Select Category:
             <select name="category" id="category">
               <option value="any">Any Category</option>
@@ -61,33 +62,32 @@
             </select>
           </label>
           <label for="difficulty"
-            >Select Difficulty:
-            <select name="difficulty" id="difficulty">
-              <option value="any">Any Difficulty</option>
-              <option value="easy">Easy</option>
-              <option value="medium">Medium</option>
-              <option value="hard">Hard</option>
-            </select>
-          </label>
-        </form>
-        <button class="btn" id="url-generator" type="button">
-          Generate Quiz
-        </button>
-        <button class="btn d-none" id="start">Start</button>
-        <div id="displayGameOver" class="d-none"></div>
-        <button class="btn d-none" id="reset">Retry this Quiz</button>
-        <button class="btn d-none" id="newGame">New Game</button>
-      </div>
-
+          >Select Difficulty:
+          <select name="difficulty" id="difficulty">
+            <option value="any">Any Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+      </form>
+      <button class="btn" id="url-generator" type="button">
+        Generate Quiz
+      </button>
+      <button class="btn d-none" id="start">Start</button>
+      <div id="displayGameOver" class="d-none"></div>
+      <button class="btn d-none" id="reset">Retry this Quiz</button>
+      <button class="btn d-none" id="newGame">New Game</button>
       <h2 id="time"></h2>
       <div id="game"></div>
     </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="JS/index.js"></script>
-  </body>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  
+  <script src="JS/index.js"></script>
+</body>
 </html>
