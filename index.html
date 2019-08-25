@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>Trivia Game</title>
+    <title>Quiz Game</title>
   </head>
   
   <body>
     <div class="container-fluid">
       <div class="row">
-        <h1>Trivia Game</h1>
-        <form action="" id="form">
+        <div class="col-12 col-md-6 col-lg-3  d-flex justify-content-center"><img src="IMG/The Spookery(1).png" class="img-fluid" alt="quiz"></div>
+        <form class="col-12" action="" id="form">
           <label for="amount"
           >Number of Questions:
           <input
@@ -72,10 +72,10 @@
         Generate Quiz
       </button>
       <button class="btn d-none" id="start">Start</button>
-      <div id="displayGameOver" class="d-none"></div>
+      <div id="displayGameOver" class="d-none col-12 d-flex justify-content-center"></div>
       <button class="btn d-none" id="reset">Retry this Quiz</button>
       <button class="btn d-none" id="newGame">New Game</button>
-      <h2 id="time"></h2>
+      <h2 class="col-12  d-flex justify-content-center" id="time"></h2>
       <div id="game"></div>
     </div>
   </div>

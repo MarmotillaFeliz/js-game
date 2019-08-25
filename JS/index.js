@@ -179,13 +179,13 @@ function displayAnswer(status) {
 
   if (status === "win") {
     $("#game").html(`
-            <p>Congratulations, you pick the corrrect answer</p>
-            <p>The correct answer is <span class="correct-answer">${correctAnswer}</span></p>
+            <p class="display-answer">Congratulations, you pick the corrrect answer</p>
+            <p class="lost-win">The correct answer is <span class="correct-answer font-weight-bold">${correctAnswer}</span></p>
         `);
   } else {
     $("#game").html(`
-            <p>The correct answer was <span class="correct-answer">${correctAnswer}</span></p>
-            <p>You lost pretty bad</p>
+            <p class="display-answer">The correct answer was <span class="correct-answer font-weight-bold">${correctAnswer}</span></p>
+            <p class="lost-win">You lost pretty bad</p>
         `);
   }
 }
