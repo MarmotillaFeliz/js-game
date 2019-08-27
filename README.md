@@ -12,6 +12,4 @@ Player can see at the end of the game how many answers he got right
 Player can retry the same quiz at the end of the game
 Player can generate a new quiz at the end of the game
 
-
-
-![WhatsApp Image 2019-08-25 at 18.22.14](/home/amandine/Downloads/WhatsApp Image 2019-08-25 at 18.22.14.jpeg)
+<img src="IMG/maqueta2.jpeg"></img>
